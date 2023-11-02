@@ -4,8 +4,8 @@ module Api
   module V1
     class TransactionsController < ApplicationController
       def create
-
-      end  
+        render json: {}, status: :ok
+      end
     end
   end
 end
