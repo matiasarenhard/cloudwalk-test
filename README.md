@@ -20,6 +20,7 @@ Needs `docker` and `docker-compose` to build the project
 ```
 
   sudo docker-compose build
+  sudo docker-compose run web bundle install
   sudo docker-compose run web rails db:create db:migrate db:seed
   sudo docker-compose up
 ```
