@@ -39,6 +39,6 @@ RSpec.describe TransactionSerializer do
   end
 
   it 'serializes the recommendation correctly when status is false' do
-    expect(subject_false.serializable_hash[:data][:attributes][:recommendation]).to eq('reprove')
+    expect(subject_false.serializable_hash[:data][:attributes][:recommendation]).to eq('deny')
   end
 end

@@ -3,6 +3,6 @@ class TransactionSerializer
   attribute :transaction_id, &:request_transaction_id
 
   attribute :recommendation do |object|
-    object.status ? 'approve' : 'reprove'
+    object.status ? 'approve' : 'deny'
   end
 end

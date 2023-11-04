@@ -10,7 +10,7 @@ module Api
         create_transaction = CreateTransactionService.new.call(params: update_params)
 
         unless create_transaction.success?
-          return render json: { errors: create_transaction.failure },
+          return render json: error_response(update_params[:request_transaction_id]),
                         status: :unprocessable_entity
         end
         render json: create_transaction, status: :ok
@@ -27,6 +27,12 @@ module Api
         new_transaction_params[:request_transaction_id] = transaction_params[:transaction_id]
         new_transaction_params.delete(:transaction_id)
         new_transaction_params
+      end
+
+      def error_response(transaction_id)
+        TransactionSerializer.new(Transaction.new(id: SecureRandom.uuid,
+                                                  request_transaction_id: transaction_id,
+                                                  status: false))
       end
     end
   end
