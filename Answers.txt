@@ -1,0 +1,29 @@
+﻿1. Explain the money flow and the information flow in the acquirer market and the role of the main players.
+The money flow in the acquirer market is the process by which merchants receive payments from their customers. The main players in this process are the acquirer, the merchant, the payment gateway, and the issuing bank.
+When a customer makes a purchase at a merchant, they swipe or tap their card at a payment terminal. The payment terminal sends a transaction request to the acquirer. The acquirer then sends the request to the issuing bank for authorization. If the authorization is approved, the acquirer deposits the funds into the merchant's account.
+
+Role of the main players
+Acquirer: The acquirer is a financial institution that contracts with merchants to process their credit and debit card payments. The acquirer is responsible for sending transaction requests to the issuing bank for authorization, depositing funds into merchant accounts, and collecting fees from merchants.
+Merchant: The merchant is a business that accepts credit and debit card payments from its customers. The merchant must contract with an acquirer in order to process its payments.
+Payment gateway: The payment gateway is a software application that connects the merchant's payment terminal to the acquirer. The payment gateway is responsible for encrypting and transmitting transaction data between the merchant and the acquirer.
+Issuing bank: The issuing bank is the bank that issued the credit or debit card to the customer. The issuing bank is responsible for authorizing transactions and updating the customer's account.
+
+2. Explain the difference between acquirer, sub-acquirer and payment gateway and how the flow explained in question 1 changes for these players.
+        Difference between acquirer, sub-acquirer, and payment gateway
+An acquirer is a financial institution that is licensed to process credit and debit card payments. A sub-acquirer is a company that does not have a direct license to process payments, but instead contracts with an acquirer to do so. A payment gateway is a software application that connects the merchant's payment terminal to the acquirer.
+How the money flow changes for these players
+The money flow changes for sub-acquires and payment gateways because they must pay a fee to the acquirer for processing transactions. The acquirer will typically keep a portion of the transaction fee and remit the remainder to the sub-acquirer or payment gateway.
+
+
+3. Explain what chargebacks are, how they differ from cancellations and what is their connection with fraud in the acquiring world.
+Chargebacks
+A chargeback is a dispute that a cardholder can file with their issuing bank if they believe that a charge on their account is unauthorized or fraudulent. The issuing bank will investigate the chargeback and, if they find in the cardholder's favor, will refund the charge to the cardholder and reverse the transaction.
+Cancellations
+A cancellation is a request from a customer to a merchant to cancel a purchase. The merchant may or may not agree to the cancellation, depending on the merchant's policies and the status of the purchase. If the merchant agrees to the cancellation, they will refund the customer's purchase.
+Difference between chargebacks and cancellations
+The main difference between chargebacks and cancellations is that chargebacks are initiated by the cardholder through their issuing bank, while cancellations are initiated by the customer directly with the merchant.
+Another difference is that chargebacks are typically more difficult for merchants to dispute than cancellations. If a cardholder files a chargeback, the merchant is responsible for providing evidence to the issuing bank that the transaction was authorized and valid. If the merchant cannot provide sufficient evidence, the issuing bank will typically side with the cardholder and issue a refund.
+Connection between chargebacks and fraud
+Chargebacks can be used to dispute fraudulent transactions, but they can also be used to dispute legitimate transactions. For example, a customer may file a chargeback if they are unhappy with a purchase or if they did not receive the goods or services they ordered.
+However, fraudsters can also use chargebacks to steal money from merchants. For example, a fraudster may make a purchase with a stolen credit card and then file a chargeback after they have received the goods or services.
+To reduce the risk of fraud, merchants should implement fraud prevention measures such as address verification and three-digit security code (CVV) verification. Merchants should also be careful about accepting orders from customers with new or unfamiliar billing and shipping addresses.
