@@ -24,11 +24,13 @@ Needs `docker` and `docker-compose` to build the project
   sudo docker-compose run web rails db:create db:migrate db:seed
   sudo docker-compose up
 ```
-![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/bb125d80-4de2-4d88-b2ad-aa1705d08445)
+![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/c797ff94-fb20-4bc5-860f-077ba9e36f57)
+
 
 <b>db:seed</b> will generate a token, put this value in <b>Authorization</b> header for make request. 
 example post to <b>http://localhost:3000/api/v1/transactions</b>: 
-![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/b08bd1a8-c09f-46a6-bb7c-88aa60a5ab40)
+![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/7cabdaf7-bec5-40f8-bf1c-49f081d177eb)
+
 
 Example of body
 ```
@@ -44,19 +46,23 @@ Example of body
 ```
 
 Example of deny request: 
-![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/bc08b093-afee-40ea-af0e-ac846681ef8f)
+![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/f9698bf2-41eb-4818-a437-89a818118b31)
+
 
 <b>Tests (rspec)</b>: <br>
 ```
 sudo docker-compose run web rspec
 ```
-![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/a5a4fd42-ae9b-4594-a53b-c30595459956)
+![image](https://github.com/matiasarenhard/cloudwalk-test/assets/14844393/ba14a562-f01e-40a8-9556-d329738d23bf)
+
 
 
 <b>Roadmap to next implementations</b>: <br>
 ```
- * use OAuth token
- * cancancan
+ * Use OAuth token
+ * Cancancan
+ * Improve covarage
+ * Create table Address, device
 ```
 
 
